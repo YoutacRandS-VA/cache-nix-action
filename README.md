@@ -17,6 +17,25 @@ The GitHub Actions ToolKit provides a set of packages to make creating actions e
 <h3 align="center">Get started with the <a href="https://github.com/actions/javascript-action">javascript-action template</a>!</h3>
 <br/>
 
+## Development
+
+Build packages (see [releases.yml](.github/workflows/releases.yml)).
+
+```sh
+npm install
+npm run bootstrap
+npm run build
+```
+
+Then, publish.
+
+```sh
+cd packages/cache
+# relevant version update
+npm version patch
+npm publish
+```
+
 ## Packages
 
 :heavy_check_mark: [@actions/core](packages/core)
